@@ -25,7 +25,7 @@ belongs to in the mysql_cluster variable.
 
 =head1 Limitations
 
-It isn't possible to install other version of Mysql-Cluster by setting a
+It isn't possible to install other versions of Mysql-Cluster by setting a
 variable. That should be easy to fix if somebody just checks the installation
 paths and tries if the playbook still works with older or newer versions.
 Patches are welcome... :)
