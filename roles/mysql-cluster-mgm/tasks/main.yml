@@ -5,7 +5,7 @@
 - name: Install nbd binaries
   command: install ndb_mgmd ndb_mgm /usr/local/bin/ chdir=/var/tmp/mysql-cluster-gpl-7.3.4-linux-glibc2.5-x86_64/bin/ creates=/usr/local/bin/ndb_mgmd
 - name: Install init file
-  copy: src=ndb_mgmd.init dest=/etc/init.d/ndb_mgmd
+  copy: src=ndb_mgmd.init dest=/etc/init.d/ndb_mgmd mode=775
 - name: Activate init file
   service: name=ndb_mgmd enabled=yes
 - name: Create data dir
